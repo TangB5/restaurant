@@ -2,19 +2,22 @@
 
 echo "=== START BUILD PROCESS ==="
 
-# 1. Mise à jour de pip et installation des dépendances
-# On utilise python3.12 pour correspondre à ton runtime Vercel
-python3.12 -m pip install --upgrade pip
+# 1. Installation des dépendances dans le dossier courant
 python3.12 -m pip install -r requirements.txt
 
-# 2. Installation de Node et compilation Tailwind
+# 2. Tailwind
 echo "=== COMPILING TAILWIND ==="
 npm install
 npm run build
 
-# 3. Collecte des fichiers statiques
+# 3. Collectstatic vers le dossier attendu par Vercel (staticfiles_build)
 echo "=== COLLECTING STATIC FILES ==="
-# On s'assure que Django est bien utilisé via le même binaire python
 python3.12 manage.py collectstatic --noinput --clear
+
+# 4. Déplacer les fichiers vers le distDir défini dans vercel.json
+mkdir -p staticfiles_build
+cp -r static/* staticfiles_build/
+# Si collectstatic a créé un dossier staticfiles ou static_root, on le copie aussi
+cp -r staticfiles/* staticfiles_build/ 2>/dev/null || :
 
 echo "=== BUILD FINISHED ==="
