@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+body.jet {
+    @apply bg-gradient-to-r from-gray-900 to-gray-800;
+}
+
+/* Barre de navigation */
+.navbar-jet {
+    @apply bg-orange-500; /* couleur orange */
+}
+
+/* Liens actifs de navigation */
+.navbar-jet .nav-link.active {
+    @apply text-white;
+}
+
+/* Boutons primaires */
+.btn-primary {
+    @apply bg-orange-500 hover:bg-orange-600 text-white;
+}

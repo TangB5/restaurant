@@ -1,0 +1,31 @@
+# --- Python / Django ---
+__pycache__/
+*.py[cod]
+*$py.class
+.env
+.venv
+venv/
+ENV/
+db.sqlite3
+data_dump.json
+data_mariadb.json
+
+# --- Django Media / Static ---
+# On ignore les fichiers collectés automatiquement par Django
+staticfiles/
+# On ignore les médias téléchargés par les utilisateurs (si tu en as encore)
+media/
+
+# --- Node / Tailwind ---
+node_modules/
+.npm
+package-lock.json
+
+# --- Vercel ---
+.vercel
+
+# --- Système / IDE ---
+.DS_Store
+.vscode/
+.idea/
+*.log

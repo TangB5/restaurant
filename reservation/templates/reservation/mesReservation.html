@@ -1,0 +1,146 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Mes Réservations | Restaurant Authentique{% endblock title %}
+
+{% block content %}
+
+<section class="relative bg-gray-900 pt-32 pb-24 overflow-hidden">
+    <div class="absolute inset-0">
+        <img src="{% static 'reservation/img/reserv.jpg' %}" alt="Réservations" class="w-full h-full object-cover ">
+        <div class="absolute inset-0 bg-gradient-to-b from-gray-900/80 to-gray-900"></div>
+    </div>
+
+    <div class="relative z-10 max-w-7xl mx-auto px-4 text-center">
+        <h1 class="text-4xl md:text-5xl font-bold text-white mb-2 tracking-tight">
+            Mes <span class="text-orange-500">Tables</span>
+        </h1>
+        <p class="text-gray-400 text-lg max-w-2xl mx-auto">
+            Gérez vos réservations à venir et retrouvez l'historique de vos visites.
+        </p>
+    </div>
+</section>
+
+<main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 mb-20 -mt-10 relative z-20">
+
+    <div class="mb-16">
+        <div class="flex items-center gap-3 mb-6">
+            <div class="h-8 w-1 bg-orange-500 rounded-full"></div>
+            <h2 class="text-2xl font-bold text-gray-900">Prochaines visites</h2>
+        </div>
+
+        {% if reservations_a_venir %}
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                {% for resa in reservations_a_venir %}
+                <div class="bg-white rounded-2xl shadow-xl border-l-4 border-orange-500 p-6 relative overflow-hidden group hover:shadow-2xl transition-all duration-300">
+
+                    <div class="absolute top-4 right-4">
+                        {% if resa.statut == 'PENDING' %}
+                            <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-yellow-100 text-yellow-700 border border-yellow-200">
+                                <span class="w-2 h-2 rounded-full bg-yellow-500 animate-pulse"></span> En attente
+                            </span>
+                        {% elif resa.statut == 'CONFIRMED' %}
+                            <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-green-100 text-green-700 border border-green-200">
+                                <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/></svg> Confirmée
+                            </span>
+                        {% endif %}
+                    </div>
+
+                    <div class="flex flex-col sm:flex-row gap-6">
+                        <div class="flex-shrink-0 flex flex-col items-center justify-center w-20 h-20 bg-orange-50 rounded-2xl border border-orange-100 text-orange-600">
+                            <span class="text-xs font-bold uppercase">{{ resa.date_reservation|date:"M" }}</span>
+                            <span class="text-3xl font-bold">{{ resa.date_reservation|date:"d" }}</span>
+                        </div>
+
+                        <div class="flex-grow space-y-3">
+                            <div>
+                                <h3 class="text-lg font-bold text-gray-900">Réservation pour {{ resa.nb_personnes }} personne{{ resa.nb_personnes|pluralize }}</h3>
+                                <p class="text-gray-500 flex items-center gap-2 mt-1">
+                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                                    À {{ resa.heure_reservation|time:"H:i" }}
+                                </p>
+                            </div>
+
+                            {% if resa.note_speciale %}
+                            <div class="bg-gray-50 p-3 rounded-lg text-sm text-gray-600 italic border border-gray-100">
+                                " {{ resa.note_speciale }} "
+                            </div>
+                            {% endif %}
+
+                            {% if resa.statut == 'PENDING' %}
+                            <div class="pt-2">
+                                <button class="text-sm text-red-500 hover:text-red-700 font-medium underline decoration-red-200 hover:decoration-red-500 transition-all">
+                                    Annuler la demande
+                                </button>
+                            </div>
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        {% else %}
+            <div class="bg-gray-50 rounded-2xl p-8 text-center border-2 border-dashed border-gray-200">
+                <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto mb-4 shadow-sm text-gray-400">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+                </div>
+                <h3 class="text-lg font-medium text-gray-900 mb-1">Aucune réservation à venir</h3>
+                <p class="text-gray-500 mb-6">Envie de découvrir nos nouveaux plats ?</p>
+                <a href="{% url 'reservation' %}" class="inline-flex items-center px-6 py-2 bg-orange-600 text-white rounded-full font-semibold hover:bg-orange-700 transition-colors shadow-lg shadow-orange-500/30">
+                    Réserver une table
+                </a>
+            </div>
+        {% endif %}
+    </div>
+
+    {% if reservations_passees %}
+    <div class="opacity-75 hover:opacity-100 transition-opacity duration-300">
+        <div class="flex items-center gap-3 mb-6">
+            <div class="h-8 w-1 bg-gray-300 rounded-full"></div>
+            <h2 class="text-2xl font-bold text-gray-600">Historique</h2>
+        </div>
+
+        <div class="bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden">
+            <div class="overflow-x-auto">
+                <table class="w-full text-left">
+                    <thead class="bg-gray-50 border-b border-gray-100">
+                        <tr>
+                            <th class="px-6 py-4 text-xs font-bold text-gray-500 uppercase tracking-wider">Date</th>
+                            <th class="px-6 py-4 text-xs font-bold text-gray-500 uppercase tracking-wider">Heure</th>
+                            <th class="px-6 py-4 text-xs font-bold text-gray-500 uppercase tracking-wider">Couverts</th>
+                            <th class="px-6 py-4 text-xs font-bold text-gray-500 uppercase tracking-wider">Statut</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-gray-100">
+                        {% for resa in reservations_passees %}
+                        <tr class="hover:bg-gray-50 transition-colors">
+                            <td class="px-6 py-4 text-sm font-medium text-gray-900">
+                                {{ resa.date_reservation|date:"d M Y" }}
+                            </td>
+                            <td class="px-6 py-4 text-sm text-gray-500">
+                                {{ resa.heure_reservation|time:"H:i" }}
+                            </td>
+                            <td class="px-6 py-4 text-sm text-gray-500">
+                                {{ resa.nb_personnes }} pers.
+                            </td>
+                            <td class="px-6 py-4">
+                                {% if resa.statut == 'COMPLETED' %}
+                                    <span class="inline-flex px-2 py-1 text-xs font-semibold rounded-full bg-gray-100 text-gray-600">Terminée</span>
+                                {% elif resa.statut == 'CANCELLED' %}
+                                    <span class="inline-flex px-2 py-1 text-xs font-semibold rounded-full bg-red-50 text-red-600">Annulée</span>
+                                {% else %}
+                                    <span class="inline-flex px-2 py-1 text-xs font-semibold rounded-full bg-gray-100 text-gray-400">Passée</span>
+                                {% endif %}
+                            </td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    {% endif %}
+
+</main>
+
+{% endblock content %}

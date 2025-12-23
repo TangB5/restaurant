@@ -1,0 +1,2306 @@
+[
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "admin",
+        "model": "logentry"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "auth",
+        "model": "permission"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "auth",
+        "model": "group"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "auth",
+        "model": "user"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "contenttypes",
+        "model": "contenttype"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "sessions",
+        "model": "session"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "restaurant",
+        "model": "meals"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "meal",
+        "model": "meal"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "commandes",
+        "model": "commande"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "commandes",
+        "model": "articlecommande"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "menu",
+        "model": "plat"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "menu",
+        "model": "categoriemenu"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "pages",
+        "model": "horairesouverture"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "pages",
+        "model": "temoignage"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "reservation",
+        "model": "reservation"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "experiance",
+        "model": "temoignage"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "menu",
+        "model": "commande"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "jet",
+        "model": "pinnedapplication"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "jet",
+        "model": "bookmark"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "dashboard",
+        "model": "userdashboardmodule"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "2f6gjw04kwp9zy8gsz7y76dnzrntq3gz",
+    "fields": {
+        "session_data": ".eJxVjDsOwjAQBe_iGlnOxl9Kes5grXc3OIASKU4qxN0hUgpo38y8l8q4rTVvTZY8sjqrXp1-t4L0kGkHfMfpNmuap3UZi94VfdCmrzPL83K4fwcVW_3WVryN4tlHASQohiVA6pOAGcDZwN5h7CgER8zsTKESgFI3AAkWF9T7A-ruOGs:1vMndq:M_g7rIuaycJm5wrtdlht9K_l3RlKHjEiuUyRl4ieLZ8",
+        "expire_date": "2025-12-06T13:27:06.692Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "7yom5vkz4a2m2bswiyofagh4pu1s9rlm",
+    "fields": {
+        "session_data": ".eJxVjDsOwjAQBe_iGlneON5NKOk5Q7TrDw4gW4qTCnF3iJQC2jcz76Um3tY8bS0u0xzUWXXq9LsJ-0csOwh3LreqfS3rMoveFX3Qpq81xOflcP8OMrf8rSUZxBGSo4GTJRSH5AeykDyAE8YAYpwgGGfI95Gxj51FBBKDMpJ6fwDPmDcQ:1vMjYQ:F_qosrZrGaKa4pET38zex3X6j-Npc5kzU0kNOfculh0",
+        "expire_date": "2025-12-06T09:05:14.585Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "8a398f9iea44mykvprivj7brvgun4ljl",
+    "fields": {
+        "session_data": ".eJxVjDsOwjAQBe_iGlnOxl9Kes5grXc3OIASKU4qxN0hUgpo38y8l8q4rTVvTZY8sjqrXp1-t4L0kGkHfMfpNmuap3UZi94VfdCmrzPL83K4fwcVW_3WVryN4tlHASQohiVA6pOAGcDZwN5h7CgER8zsTKESgFI3AAkWF9T7A-ruOGs:1vMshc:vDv4nTGxQSyEPzdkRoYtb0EBtIqMyYtwuhAgdCVTg44",
+        "expire_date": "2025-12-06T18:51:20.614Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "bwe4bvje9hgijij7l7jjcrg4jrqgbhrg",
+    "fields": {
+        "session_data": ".eJxVjDsOwjAQBe_iGlnOxl9Kes5grXc3OIASKU4qxN0hUgpo38y8l8q4rTVvTZY8sjqrXp1-t4L0kGkHfMfpNmuap3UZi94VfdCmrzPL83K4fwcVW_3WVryN4tlHASQohiVA6pOAGcDZwN5h7CgER8zsTKESgFI3AAkWF9T7A-ruOGs:1vNGx7:OC0c8VwUEHN7-zHVH-kRsYXXKmq0pMHzWhtYHxbc-jQ",
+        "expire_date": "2025-12-07T20:44:57.268Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "chkyzwcyj4pqa8woopqp0ieclvmq1okb",
+    "fields": {
+        "session_data": ".eJxVjDsOwjAQBe_iGlnOxl9Kes5grXc3OIASKU4qxN0hUgpo38y8l8q4rTVvTZY8sjqrXp1-t4L0kGkHfMfpNmuap3UZi94VfdCmrzPL83K4fwcVW_3WVryN4tlHASQohiVA6pOAGcDZwN5h7CgER8zsTKESgFI3AAkWF9T7A-ruOGs:1vNHPA:WMBwCcCIJr-eQyeiR0g-lMm30nOlokhTpaOkUyLW9do",
+        "expire_date": "2025-12-07T21:13:56.653Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "ed7jti6ku0gffphtwou6xw12gk226h9c",
+    "fields": {
+        "session_data": ".eJxVjDsOwjAQBe_iGlnOxl9Kes5grXc3OIASKU4qxN0hUgpo38y8l8q4rTVvTZY8sjqrXp1-t4L0kGkHfMfpNmuap3UZi94VfdCmrzPL83K4fwcVW_3WVryN4tlHASQohiVA6pOAGcDZwN5h7CgER8zsTKESgFI3AAkWF9T7A-ruOGs:1vNGx7:OC0c8VwUEHN7-zHVH-kRsYXXKmq0pMHzWhtYHxbc-jQ",
+        "expire_date": "2025-12-07T20:44:57.228Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "hmtstxidaq0y8vf4lv9dkhxcrvkfnzyl",
+    "fields": {
+        "session_data": ".eJxVjDsOwjAQBe_iGlnOxl9Kes5grXc3OIASKU4qxN0hUgpo38y8l8q4rTVvTZY8sjqrXp1-t4L0kGkHfMfpNmuap3UZi94VfdCmrzPL83K4fwcVW_3WVryN4tlHASQohiVA6pOAGcDZwN5h7CgER8zsTKESgFI3AAkWF9T7A-ruOGs:1vMn7y:Lr1OgFjky6xC5_xnD26nglRnvGzBgtRJ8-jga5UIkoE",
+        "expire_date": "2025-12-06T12:54:10.742Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "hwy2f2ilht63b459cw5bwvdap2ewehgj",
+    "fields": {
+        "session_data": ".eJxVjDsOwjAQBe_iGlneON5NKOk5Q7TrDw4gW4qTCnF3iJQC2jcz76Um3tY8bS0u0xzUWXXq9LsJ-0csOwh3LreqfS3rMoveFX3Qpq81xOflcP8OMrf8rSUZxBGSo4GTJRSH5AeykDyAE8YAYpwgGGfI95Gxj51FBBKDMpJ6fwDPmDcQ:1vMjYQ:F_qosrZrGaKa4pET38zex3X6j-Npc5kzU0kNOfculh0",
+        "expire_date": "2025-12-06T09:05:14.587Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "jcd87uw2tkphc81mzo7p3zbb06enmh3i",
+    "fields": {
+        "session_data": ".eJxVjDsOwjAQBe_iGlneON5NKOk5Q7TrDw4gW4qTCnF3iJQC2jcz76Um3tY8bS0u0xzUWXXq9LsJ-0csOwh3LreqfS3rMoveFX3Qpq81xOflcP8OMrf8rSUZxBGSo4GTJRSH5AeykDyAE8YAYpwgGGfI95Gxj51FBBKDMpJ6fwDPmDcQ:1vPl2X:bnPyIFPsLDr9OGVUQAUzYkx46zKarUTdeqweVzPhkXM",
+        "expire_date": "2025-12-14T17:16:49.828Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "m101zyzaiqxw5lnzrj4q0f6o12gztwwu",
+    "fields": {
+        "session_data": ".eJzFlU9zmzAQxb8Kw6UX2yDbCDu3tof2kplOpzmVjEd_FqwWJI-AHJrxd69kO2ksjFGZZHLDu0_Per9dhsdwQ9pmu2lr0BvBw5twHk5e1ihhv0HaBv9FZKFmTMlGCzqzktmpW89uFYfy00l7ZrAl9dacpnmM8RrlSboi-SLFNMEpW6ULlDOEEkowRzROKEZxEqdsCQQvYb7AGKU0xnSdWtMKZFsbr5-PWShJBVl4E2ThR_NXIBvBSCOUDIjkgS0pLf4cKlk4MSrB7JPV56QOcjKttwJKPiVlcxRUNkFtJef2X7Rqd3WPiU1YT5kqjv1Wl8d2RHglZGQpRIU1iI4Cwvldv8Z0TzqqgXCm24peuNErBN5PglEh9_dWAYJbAYrjuWt0Z7VdH_3kc4WTbQ9gOkjej9JwOJfPwi0g1_PW7HSPJROalXB9Oz-TJsvaOIZ1YZJBHXAIPC3dIdi3KzK04OB0-NU7jQtaz7F4XM5FNDKjiz7p-KqqMmsBfSMdhnUyGOL0JHtDRJ5RXCbYNfpWkmY0j505PMDiIHk7Dj7XdxmkbmHZcSWF15L0vaRflSZC28X9oNoH0E2rYQTjnb1GtD2ZPTt1iMu2LAfh-mRyOYzI4bJdu54_oFKikJ6ELyNpnj36t6-j9FzCMZz8Mzl4UOzyWrne38F8aB56vmDeG_nCZQx2_e_42XMv_b4DnkPwD30F1__OYu4W0P4-3P8FKQCVdw:1vPn9g:8ro9HHBdm314ac5MvgPJeGS91SREQOlv18I7m5sfaW0",
+        "expire_date": "2025-12-14T19:32:20.746Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "s0auup9bn3w4uyu1dzo37vdq7tubit6g",
+    "fields": {
+        "session_data": "e30:1vMlXJ:HCBb4mc7jJ6y9luwoM7HuEzss387fz3LZxXwjkOynRw",
+        "expire_date": "2025-12-06T11:12:13.289Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "sg9g3ll2537g77n23p42ct9evfe22o18",
+    "fields": {
+        "session_data": ".eJxVjDsOwjAQBe_iGlnOxl9Kes5grXc3OIASKU4qxN0hUgpo38y8l8q4rTVvTZY8sjqrXp1-t4L0kGkHfMfpNmuap3UZi94VfdCmrzPL83K4fwcVW_3WVryN4tlHASQohiVA6pOAGcDZwN5h7CgER8zsTKESgFI3AAkWF9T7A-ruOGs:1vNGy1:f9peHOVzGkhf11O3lvoJO_Pq7rSX4pCi4cvC9YSnMKw",
+        "expire_date": "2025-12-07T20:45:53.141Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "ubfweoaa2lp3lsama6h4vl3rdzsph20j",
+    "fields": {
+        "session_data": ".eJxVjDsOwjAQBe_iGlneON5NKOk5Q7TrDw4gW4qTCnF3iJQC2jcz76Um3tY8bS0u0xzUWXXq9LsJ-0csOwh3LreqfS3rMoveFX3Qpq81xOflcP8OMrf8rSUZxBGSo4GTJRSH5AeykDyAE8YAYpwgGGfI95Gxj51FBBKDMpJ6fwDPmDcQ:1vNRie:MIp6wd2QDa-bxra-BhTMyAj1saCvHK7n7q6dnKfD4oo",
+        "expire_date": "2025-12-08T08:14:44.219Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "ugm7m9oyo807hq07crazrap4mtv4800d",
+    "fields": {
+        "session_data": ".eJxVjDsOwjAQBe_iGlnOxl9Kes5grXc3OIASKU4qxN0hUgpo38y8l8q4rTVvTZY8sjqrXp1-t4L0kGkHfMfpNmuap3UZi94VfdCmrzPL83K4fwcVW_3WVryN4tlHASQohiVA6pOAGcDZwN5h7CgER8zsTKESgFI3AAkWF9T7A-ruOGs:1vMn7y:Lr1OgFjky6xC5_xnD26nglRnvGzBgtRJ8-jga5UIkoE",
+        "expire_date": "2025-12-06T12:54:10.272Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "vkahyl6hxcq4yu2ut9jki545modkkix1",
+    "fields": {
+        "session_data": ".eJxVjDsOwjAQBe_iGlneON5NKOk5Q7TrDw4gW4qTCnF3iJQC2jcz76Um3tY8bS0u0xzUWXXq9LsJ-0csOwh3LreqfS3rMoveFX3Qpq81xOflcP8OMrf8rSUZxBGSo4GTJRSH5AeykDyAE8YAYpwgGGfI95Gxj51FBBKDMpJ6fwDPmDcQ:1vMlZx:33G8gyZmswPxUFjcP-fq7uLUI1ACsUVRI2e9K5bYuq4",
+        "expire_date": "2025-12-06T11:14:57.777Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "waiza0pujq8ma3ubuioyvoxh2xmkhn5s",
+    "fields": {
+        "session_data": ".eJxVjDsOwjAQBe_iGlnOxl9Kes5grXc3OIASKU4qxN0hUgpo38y8l8q4rTVvTZY8sjqrXp1-t4L0kGkHfMfpNmuap3UZi94VfdCmrzPL83K4fwcVW_3WVryN4tlHASQohiVA6pOAGcDZwN5h7CgER8zsTKESgFI3AAkWF9T7A-ruOGs:1vNGy1:f9peHOVzGkhf11O3lvoJO_Pq7rSX4pCi4cvC9YSnMKw",
+        "expire_date": "2025-12-07T20:45:53.351Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "ycpmfmtq9z53cbikg9bxi0xf78fshn92",
+    "fields": {
+        "session_data": ".eJxVjDsOwjAQBe_iGlneON5NKOk5Q7TrDw4gW4qTCnF3iJQC2jcz76Um3tY8bS0u0xzUWXXq9LsJ-0csOwh3LreqfS3rMoveFX3Qpq81xOflcP8OMrf8rSUZxBGSo4GTJRSH5AeykDyAE8YAYpwgGGfI95Gxj51FBBKDMpJ6fwDPmDcQ:1vMlcN:bR6xLSYIYj4PgfXgSOt6arvEnSrvDrNu7xU1sLMZpYM",
+        "expire_date": "2025-12-06T11:17:27.239Z"
+    }
+},
+{
+    "model": "menu.categoriemenu",
+    "pk": 1,
+    "fields": {
+        "nom": "Entrées",
+        "description": "Petits délices pour commencer le repas.",
+        "ordre": 1
+    }
+},
+{
+    "model": "menu.categoriemenu",
+    "pk": 2,
+    "fields": {
+        "nom": "Plats Principaux",
+        "description": "Le cœur de notre cuisine.",
+        "ordre": 2
+    }
+},
+{
+    "model": "menu.categoriemenu",
+    "pk": 3,
+    "fields": {
+        "nom": "Desserts",
+        "description": "Une touche sucrée pour la fin.",
+        "ordre": 3
+    }
+},
+{
+    "model": "menu.categoriemenu",
+    "pk": 4,
+    "fields": {
+        "nom": "Plats Locaux",
+        "description": "Spécialités camerounaises et d'Afrique Centrale",
+        "ordre": 2
+    }
+},
+{
+    "model": "menu.categoriemenu",
+    "pk": 5,
+    "fields": {
+        "nom": "Poissons & Grillades",
+        "description": "Viandes et poissons grillés au charbon",
+        "ordre": 3
+    }
+},
+{
+    "model": "menu.categoriemenu",
+    "pk": 6,
+    "fields": {
+        "nom": "Boissons",
+        "description": "Jus, bières et sodas",
+        "ordre": 4
+    }
+},
+{
+    "model": "menu.plat",
+    "pk": 11,
+    "fields": {
+        "categorie": 1,
+        "nom": "Beignets de Haricots (Puff-Puff & Haricot)",
+        "description": "Portion classique de beignets et de haricots frits.",
+        "prix": 1500,
+        "image": "image/sweet-plate-with-various-sweets-min.jpg",
+        "stock": 7,
+        "disponible": true,
+        "is_special": true
+    }
+},
+{
+    "model": "menu.plat",
+    "pk": 12,
+    "fields": {
+        "categorie": 1,
+        "nom": "Salade de Crabe et Avocat",
+        "description": "Chair de crabe frais mélangée à de l'avocat et une vinaigrette légère.",
+        "prix": 4500,
+        "image": "image/roast-chicken-liver-with-vegetables-min.jpg",
+        "stock": 7,
+        "disponible": true,
+        "is_special": false
+    }
+},
+{
+    "model": "menu.plat",
+    "pk": 13,
+    "fields": {
+        "categorie": 4,
+        "nom": "Ndolé au Bœuf Fumé",
+        "description": "Le plat national camerounais, servi avec du bœuf fumé et des beignets de manioc (Miondo).",
+        "prix": 6000,
+        "image": "image/roasted-grilled-beef-liver-with-onion-tomatoes-salad-min.jpg",
+        "stock": 5,
+        "disponible": true,
+        "is_special": true
+    }
+},
+{
+    "model": "menu.plat",
+    "pk": 14,
+    "fields": {
+        "categorie": 4,
+        "nom": "Koki",
+        "description": "Haricots cornille écrasés cuits à la vapeur dans des feuilles de bananier.",
+        "prix": 3500,
+        "image": "image/high-angle-delicious-brazilian-food-composition-min-1.jpg",
+        "stock": 12,
+        "disponible": true,
+        "is_special": false
+    }
+},
+{
+    "model": "menu.plat",
+    "pk": 15,
+    "fields": {
+        "categorie": 4,
+        "nom": "Poulet DG",
+        "description": "Poulet braisé servi avec des plantains mûrs frits, une spécialité de la maison.",
+        "prix": 8500,
+        "image": "image/top-view-cooked-vegetable-meal-with-meat-sliced-bell-peppers-inside-pan-brown-desk-min.jpg",
+        "stock": 9,
+        "disponible": true,
+        "is_special": false
+    }
+},
+{
+    "model": "menu.plat",
+    "pk": 16,
+    "fields": {
+        "categorie": 5,
+        "nom": "Poisson Braisé (Tilapia)",
+        "description": "Poisson frais braisé au charbon, servi avec bâton de manioc ou frites de plantain.",
+        "prix": 7000,
+        "image": "image/2a78f207b6ef55cc843b3b02dff8f7f9.jpg",
+        "stock": 10,
+        "disponible": true,
+        "is_special": false
+    }
+},
+{
+    "model": "menu.plat",
+    "pk": 17,
+    "fields": {
+        "categorie": 5,
+        "nom": "Brochettes de Bœuf (Soya)",
+        "description": "Cinq brochettes de bœuf marinées et grillées, arrosées d'huile épicée.",
+        "prix": 4000,
+        "image": "image/fried-chicken-with-grilled-potatoes-eggplants-tomatoes-peppers-min.jpg",
+        "stock": 12,
+        "disponible": true,
+        "is_special": false
+    }
+},
+{
+    "model": "menu.plat",
+    "pk": 18,
+    "fields": {
+        "categorie": 5,
+        "nom": "Escalope de Poulet Grillée",
+        "description": "Escalope de poulet marinée aux herbes, accompagnée de riz blanc.",
+        "prix": 5500,
+        "image": "image/plat1_YUBTCj9.jpg",
+        "stock": 0,
+        "disponible": true,
+        "is_special": false
+    }
+},
+{
+    "model": "menu.plat",
+    "pk": 19,
+    "fields": {
+        "categorie": 6,
+        "nom": "Jus de Gingembre (Gnamakou)",
+        "description": "Jus frais fait maison au gingembre, citron et ananas.",
+        "prix": 1500,
+        "image": "image/high-angle-mix-alcoholic-drinks.jpg",
+        "stock": 1,
+        "disponible": true,
+        "is_special": true
+    }
+},
+{
+    "model": "menu.plat",
+    "pk": 20,
+    "fields": {
+        "categorie": 6,
+        "nom": "Bière locale (33 Export / Beaufort)",
+        "description": "Bière locale fraîche (grande bouteille).",
+        "prix": 1000,
+        "image": "image/3b675ec9-ece6-42fc-8cad-98ab330e1354-min.jpg",
+        "stock": 12,
+        "disponible": true,
+        "is_special": false
+    }
+},
+{
+    "model": "menu.plat",
+    "pk": 21,
+    "fields": {
+        "categorie": 3,
+        "nom": "gourmet pasion",
+        "description": "plas du sud cameroun avec les compliment duchef",
+        "prix": 1700,
+        "image": "image/various-desserts-topped-cookie-min.jpg",
+        "stock": 7,
+        "disponible": true,
+        "is_special": false
+    }
+},
+{
+    "model": "menu.plat",
+    "pk": 22,
+    "fields": {
+        "categorie": 2,
+        "nom": "katikati",
+        "description": "plat du NordOuest cameroune \"surprise sous les papille",
+        "prix": 2000,
+        "image": "image/side-view-chicken-kebab-lavash-served-with-fresh-herbs-onion-adjika-sauce-min.jpg",
+        "stock": 10,
+        "disponible": true,
+        "is_special": true
+    }
+},
+{
+    "model": "menu.plat",
+    "pk": 23,
+    "fields": {
+        "categorie": 2,
+        "nom": "riz curri",
+        "description": "ruz curri plas japonais a l'africaine",
+        "prix": 1500,
+        "image": "image/side-view-meat-stew-lamb-stew-with-fried-onion-dried-fruits-with-rice-plate-min.jpg",
+        "stock": 3,
+        "disponible": true,
+        "is_special": false
+    }
+},
+{
+    "model": "menu.plat",
+    "pk": 24,
+    "fields": {
+        "categorie": 3,
+        "nom": "Beignets souflee a la creme",
+        "description": "Beignets souflee a la creme et au chocolat ideal pour la digestion",
+        "prix": 1800,
+        "image": "image/top-view-dessert-profiteroles-with-chocolate-icing-grated-nuts-min.jpg",
+        "stock": 15,
+        "disponible": true,
+        "is_special": false
+    }
+},
+{
+    "model": "menu.plat",
+    "pk": 25,
+    "fields": {
+        "categorie": 3,
+        "nom": "Beignets souflee a la creme",
+        "description": "Beignets souflee a la creme et au chocolat ideal pour la digestion",
+        "prix": 1800,
+        "image": "image/top-view-dessert-profiteroles-with-chocolate-icing-grated-nuts-min_6SroQzL.jpg",
+        "stock": 14,
+        "disponible": true,
+        "is_special": false
+    }
+},
+{
+    "model": "pages.temoignage",
+    "pk": 1,
+    "fields": {
+        "auteur": "Sophie Dubois",
+        "titre_plat": "La Poutine Signature",
+        "texte": "Absolument la meilleure poutine que j'ai jamais goûtée ! Les frites étaient croustillantes et la sauce, divine. Un délice !",
+        "date_ajout": "2025-11-20T12:14:52.094Z",
+        "visible": true
+    }
+},
+{
+    "model": "pages.temoignage",
+    "pk": 2,
+    "fields": {
+        "auteur": "Marc Lefevre",
+        "titre_plat": "Salade de Chèvre Chaud",
+        "texte": "Frais, léger et savoureux. Parfait pour un déjeuner d'été. Service très agréable.",
+        "date_ajout": "2025-11-20T12:14:52.102Z",
+        "visible": true
+    }
+},
+{
+    "model": "pages.temoignage",
+    "pk": 3,
+    "fields": {
+        "auteur": "Jean-Pierre T.",
+        "titre_plat": "Expérience globale",
+        "texte": "Le cadre est chaleureux et l'ambiance est cosy. Nous reviendrons sans hésiter pour essayer les desserts !",
+        "date_ajout": "2025-11-20T12:14:52.105Z",
+        "visible": true
+    }
+},
+{
+    "model": "pages.horairesouverture",
+    "pk": 1,
+    "fields": {
+        "jour": "LUN",
+        "heure_ouverture": "11:30:00",
+        "heure_fermeture": "14:00:00",
+        "est_ferme": false
+    }
+},
+{
+    "model": "pages.horairesouverture",
+    "pk": 2,
+    "fields": {
+        "jour": "MAR",
+        "heure_ouverture": "11:30:00",
+        "heure_fermeture": "22:00:00",
+        "est_ferme": false
+    }
+},
+{
+    "model": "pages.horairesouverture",
+    "pk": 3,
+    "fields": {
+        "jour": "MER",
+        "heure_ouverture": "00:00:00",
+        "heure_fermeture": "00:00:00",
+        "est_ferme": true
+    }
+},
+{
+    "model": "pages.horairesouverture",
+    "pk": 4,
+    "fields": {
+        "jour": "JEU",
+        "heure_ouverture": "11:30:00",
+        "heure_fermeture": "22:30:00",
+        "est_ferme": false
+    }
+},
+{
+    "model": "pages.horairesouverture",
+    "pk": 5,
+    "fields": {
+        "jour": "VEN",
+        "heure_ouverture": "11:30:00",
+        "heure_fermeture": "23:00:00",
+        "est_ferme": false
+    }
+},
+{
+    "model": "pages.horairesouverture",
+    "pk": 6,
+    "fields": {
+        "jour": "SAM",
+        "heure_ouverture": "18:00:00",
+        "heure_fermeture": "23:00:00",
+        "est_ferme": false
+    }
+},
+{
+    "model": "pages.horairesouverture",
+    "pk": 7,
+    "fields": {
+        "jour": "DIM",
+        "heure_ouverture": "12:00:00",
+        "heure_fermeture": "14:30:00",
+        "est_ferme": false
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add log entry",
+        "content_type": [
+            "admin",
+            "logentry"
+        ],
+        "codename": "add_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change log entry",
+        "content_type": [
+            "admin",
+            "logentry"
+        ],
+        "codename": "change_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete log entry",
+        "content_type": [
+            "admin",
+            "logentry"
+        ],
+        "codename": "delete_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view log entry",
+        "content_type": [
+            "admin",
+            "logentry"
+        ],
+        "codename": "view_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add permission",
+        "content_type": [
+            "auth",
+            "permission"
+        ],
+        "codename": "add_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change permission",
+        "content_type": [
+            "auth",
+            "permission"
+        ],
+        "codename": "change_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete permission",
+        "content_type": [
+            "auth",
+            "permission"
+        ],
+        "codename": "delete_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view permission",
+        "content_type": [
+            "auth",
+            "permission"
+        ],
+        "codename": "view_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add group",
+        "content_type": [
+            "auth",
+            "group"
+        ],
+        "codename": "add_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change group",
+        "content_type": [
+            "auth",
+            "group"
+        ],
+        "codename": "change_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete group",
+        "content_type": [
+            "auth",
+            "group"
+        ],
+        "codename": "delete_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view group",
+        "content_type": [
+            "auth",
+            "group"
+        ],
+        "codename": "view_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add user",
+        "content_type": [
+            "auth",
+            "user"
+        ],
+        "codename": "add_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change user",
+        "content_type": [
+            "auth",
+            "user"
+        ],
+        "codename": "change_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete user",
+        "content_type": [
+            "auth",
+            "user"
+        ],
+        "codename": "delete_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view user",
+        "content_type": [
+            "auth",
+            "user"
+        ],
+        "codename": "view_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add content type",
+        "content_type": [
+            "contenttypes",
+            "contenttype"
+        ],
+        "codename": "add_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change content type",
+        "content_type": [
+            "contenttypes",
+            "contenttype"
+        ],
+        "codename": "change_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete content type",
+        "content_type": [
+            "contenttypes",
+            "contenttype"
+        ],
+        "codename": "delete_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view content type",
+        "content_type": [
+            "contenttypes",
+            "contenttype"
+        ],
+        "codename": "view_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add session",
+        "content_type": [
+            "sessions",
+            "session"
+        ],
+        "codename": "add_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change session",
+        "content_type": [
+            "sessions",
+            "session"
+        ],
+        "codename": "change_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete session",
+        "content_type": [
+            "sessions",
+            "session"
+        ],
+        "codename": "delete_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view session",
+        "content_type": [
+            "sessions",
+            "session"
+        ],
+        "codename": "view_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add meals",
+        "content_type": [
+            "restaurant",
+            "meals"
+        ],
+        "codename": "add_meals"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change meals",
+        "content_type": [
+            "restaurant",
+            "meals"
+        ],
+        "codename": "change_meals"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete meals",
+        "content_type": [
+            "restaurant",
+            "meals"
+        ],
+        "codename": "delete_meals"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view meals",
+        "content_type": [
+            "restaurant",
+            "meals"
+        ],
+        "codename": "view_meals"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add meal",
+        "content_type": [
+            "meal",
+            "meal"
+        ],
+        "codename": "add_meal"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change meal",
+        "content_type": [
+            "meal",
+            "meal"
+        ],
+        "codename": "change_meal"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete meal",
+        "content_type": [
+            "meal",
+            "meal"
+        ],
+        "codename": "delete_meal"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view meal",
+        "content_type": [
+            "meal",
+            "meal"
+        ],
+        "codename": "view_meal"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add commande",
+        "content_type": [
+            "commandes",
+            "commande"
+        ],
+        "codename": "add_commande"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change commande",
+        "content_type": [
+            "commandes",
+            "commande"
+        ],
+        "codename": "change_commande"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete commande",
+        "content_type": [
+            "commandes",
+            "commande"
+        ],
+        "codename": "delete_commande"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view commande",
+        "content_type": [
+            "commandes",
+            "commande"
+        ],
+        "codename": "view_commande"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add article commande",
+        "content_type": [
+            "commandes",
+            "articlecommande"
+        ],
+        "codename": "add_articlecommande"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change article commande",
+        "content_type": [
+            "commandes",
+            "articlecommande"
+        ],
+        "codename": "change_articlecommande"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete article commande",
+        "content_type": [
+            "commandes",
+            "articlecommande"
+        ],
+        "codename": "delete_articlecommande"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view article commande",
+        "content_type": [
+            "commandes",
+            "articlecommande"
+        ],
+        "codename": "view_articlecommande"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add plat",
+        "content_type": [
+            "menu",
+            "plat"
+        ],
+        "codename": "add_plat"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change plat",
+        "content_type": [
+            "menu",
+            "plat"
+        ],
+        "codename": "change_plat"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete plat",
+        "content_type": [
+            "menu",
+            "plat"
+        ],
+        "codename": "delete_plat"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view plat",
+        "content_type": [
+            "menu",
+            "plat"
+        ],
+        "codename": "view_plat"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add categorie menu",
+        "content_type": [
+            "menu",
+            "categoriemenu"
+        ],
+        "codename": "add_categoriemenu"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change categorie menu",
+        "content_type": [
+            "menu",
+            "categoriemenu"
+        ],
+        "codename": "change_categoriemenu"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete categorie menu",
+        "content_type": [
+            "menu",
+            "categoriemenu"
+        ],
+        "codename": "delete_categoriemenu"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view categorie menu",
+        "content_type": [
+            "menu",
+            "categoriemenu"
+        ],
+        "codename": "view_categoriemenu"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add horaires ouverture",
+        "content_type": [
+            "pages",
+            "horairesouverture"
+        ],
+        "codename": "add_horairesouverture"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change horaires ouverture",
+        "content_type": [
+            "pages",
+            "horairesouverture"
+        ],
+        "codename": "change_horairesouverture"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete horaires ouverture",
+        "content_type": [
+            "pages",
+            "horairesouverture"
+        ],
+        "codename": "delete_horairesouverture"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view horaires ouverture",
+        "content_type": [
+            "pages",
+            "horairesouverture"
+        ],
+        "codename": "view_horairesouverture"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add temoignage",
+        "content_type": [
+            "pages",
+            "temoignage"
+        ],
+        "codename": "add_temoignage"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change temoignage",
+        "content_type": [
+            "pages",
+            "temoignage"
+        ],
+        "codename": "change_temoignage"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete temoignage",
+        "content_type": [
+            "pages",
+            "temoignage"
+        ],
+        "codename": "delete_temoignage"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view temoignage",
+        "content_type": [
+            "pages",
+            "temoignage"
+        ],
+        "codename": "view_temoignage"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add reservation",
+        "content_type": [
+            "reservation",
+            "reservation"
+        ],
+        "codename": "add_reservation"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change reservation",
+        "content_type": [
+            "reservation",
+            "reservation"
+        ],
+        "codename": "change_reservation"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete reservation",
+        "content_type": [
+            "reservation",
+            "reservation"
+        ],
+        "codename": "delete_reservation"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view reservation",
+        "content_type": [
+            "reservation",
+            "reservation"
+        ],
+        "codename": "view_reservation"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add Témoignage",
+        "content_type": [
+            "experiance",
+            "temoignage"
+        ],
+        "codename": "add_temoignage"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change Témoignage",
+        "content_type": [
+            "experiance",
+            "temoignage"
+        ],
+        "codename": "change_temoignage"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete Témoignage",
+        "content_type": [
+            "experiance",
+            "temoignage"
+        ],
+        "codename": "delete_temoignage"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view Témoignage",
+        "content_type": [
+            "experiance",
+            "temoignage"
+        ],
+        "codename": "view_temoignage"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add commande",
+        "content_type": [
+            "menu",
+            "commande"
+        ],
+        "codename": "add_commande"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change commande",
+        "content_type": [
+            "menu",
+            "commande"
+        ],
+        "codename": "change_commande"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete commande",
+        "content_type": [
+            "menu",
+            "commande"
+        ],
+        "codename": "delete_commande"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view commande",
+        "content_type": [
+            "menu",
+            "commande"
+        ],
+        "codename": "view_commande"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add pinned application",
+        "content_type": [
+            "jet",
+            "pinnedapplication"
+        ],
+        "codename": "add_pinnedapplication"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change pinned application",
+        "content_type": [
+            "jet",
+            "pinnedapplication"
+        ],
+        "codename": "change_pinnedapplication"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete pinned application",
+        "content_type": [
+            "jet",
+            "pinnedapplication"
+        ],
+        "codename": "delete_pinnedapplication"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view pinned application",
+        "content_type": [
+            "jet",
+            "pinnedapplication"
+        ],
+        "codename": "view_pinnedapplication"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add bookmark",
+        "content_type": [
+            "jet",
+            "bookmark"
+        ],
+        "codename": "add_bookmark"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change bookmark",
+        "content_type": [
+            "jet",
+            "bookmark"
+        ],
+        "codename": "change_bookmark"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete bookmark",
+        "content_type": [
+            "jet",
+            "bookmark"
+        ],
+        "codename": "delete_bookmark"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view bookmark",
+        "content_type": [
+            "jet",
+            "bookmark"
+        ],
+        "codename": "view_bookmark"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add user dashboard module",
+        "content_type": [
+            "dashboard",
+            "userdashboardmodule"
+        ],
+        "codename": "add_userdashboardmodule"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change user dashboard module",
+        "content_type": [
+            "dashboard",
+            "userdashboardmodule"
+        ],
+        "codename": "change_userdashboardmodule"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete user dashboard module",
+        "content_type": [
+            "dashboard",
+            "userdashboardmodule"
+        ],
+        "codename": "delete_userdashboardmodule"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view user dashboard module",
+        "content_type": [
+            "dashboard",
+            "userdashboardmodule"
+        ],
+        "codename": "view_userdashboardmodule"
+    }
+},
+{
+    "model": "auth.user",
+    "fields": {
+        "password": "pbkdf2_sha256$1000000$KUjRB1g6IyaJftJiZm3txT$ZrXdNm+laJqHLDFivbqQSpT/xpDwzBNLXp8GwHEjXcY=",
+        "last_login": "2025-11-15T19:46:31.784Z",
+        "is_superuser": true,
+        "username": "kingtang",
+        "first_name": "",
+        "last_name": "",
+        "email": "king@gmail.com",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2025-11-15T19:43:54.991Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "fields": {
+        "password": "pbkdf2_sha256$1000000$IEwvZiXqILLRfNRpPj4xVa$0Wjj7F5dan1mrxnmJnATBIYCaTG61GqBGXJCwQwJP1k=",
+        "last_login": "2025-11-30T19:32:20.699Z",
+        "is_superuser": true,
+        "username": "king",
+        "first_name": "",
+        "last_name": "",
+        "email": "kingtang337@gmail.com",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2025-11-17T11:31:38.742Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "fields": {
+        "password": "pbkdf2_sha256$1000000$yUzjmSbqeN1oW4VkUGCMff$AcvjhnRk3Gp86N0q3g5E4D37zQvVIk44j0Ln1jHk0ik=",
+        "last_login": "2025-11-24T08:06:57.905Z",
+        "is_superuser": false,
+        "username": "pharaon",
+        "first_name": "",
+        "last_name": "",
+        "email": "ndohyannick78@gmail.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2025-11-22T12:10:07.437Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "menu.commande",
+    "pk": 1,
+    "fields": {
+        "plats": 19,
+        "client": [
+            "king"
+        ],
+        "montant": 1500,
+        "nbPlat": 0,
+        "status": "pending",
+        "created_at": "2025-11-22T02:03:12.733Z"
+    }
+},
+{
+    "model": "menu.commande",
+    "pk": 2,
+    "fields": {
+        "plats": 19,
+        "client": [
+            "king"
+        ],
+        "montant": 1500,
+        "nbPlat": 0,
+        "status": "pending",
+        "created_at": "2025-11-22T02:05:10.731Z"
+    }
+},
+{
+    "model": "menu.commande",
+    "pk": 3,
+    "fields": {
+        "plats": 20,
+        "client": [
+            "king"
+        ],
+        "montant": 1000,
+        "nbPlat": 0,
+        "status": "pending",
+        "created_at": "2025-11-22T02:05:40.046Z"
+    }
+},
+{
+    "model": "menu.commande",
+    "pk": 4,
+    "fields": {
+        "plats": 19,
+        "client": [
+            "king"
+        ],
+        "montant": 1500,
+        "nbPlat": 0,
+        "status": "pending",
+        "created_at": "2025-11-22T02:06:34.761Z"
+    }
+},
+{
+    "model": "menu.commande",
+    "pk": 5,
+    "fields": {
+        "plats": 17,
+        "client": [
+            "king"
+        ],
+        "montant": 4000,
+        "nbPlat": 0,
+        "status": "pending",
+        "created_at": "2025-11-22T09:05:28.619Z"
+    }
+},
+{
+    "model": "menu.commande",
+    "pk": 6,
+    "fields": {
+        "plats": 17,
+        "client": [
+            "king"
+        ],
+        "montant": 4000,
+        "nbPlat": 0,
+        "status": "pending",
+        "created_at": "2025-11-22T09:05:28.732Z"
+    }
+},
+{
+    "model": "menu.commande",
+    "pk": 7,
+    "fields": {
+        "plats": 19,
+        "client": [
+            "king"
+        ],
+        "montant": 1500,
+        "nbPlat": 0,
+        "status": "pending",
+        "created_at": "2025-11-22T10:02:45.325Z"
+    }
+},
+{
+    "model": "menu.commande",
+    "pk": 8,
+    "fields": {
+        "plats": 11,
+        "client": [
+            "pharaon"
+        ],
+        "montant": 1500,
+        "nbPlat": 0,
+        "status": "pending",
+        "created_at": "2025-11-22T13:07:49.700Z"
+    }
+},
+{
+    "model": "menu.commande",
+    "pk": 9,
+    "fields": {
+        "plats": 25,
+        "client": [
+            "pharaon"
+        ],
+        "montant": 1800,
+        "nbPlat": 0,
+        "status": "pending",
+        "created_at": "2025-11-23T20:09:41.302Z"
+    }
+},
+{
+    "model": "menu.commande",
+    "pk": 10,
+    "fields": {
+        "plats": 19,
+        "client": [
+            "pharaon"
+        ],
+        "montant": 1500,
+        "nbPlat": 0,
+        "status": "pending",
+        "created_at": "2025-11-24T08:08:15.502Z"
+    }
+},
+{
+    "model": "reservation.reservation",
+    "pk": 1,
+    "fields": {
+        "client": null,
+        "nom_client": "Yannick Ndoh",
+        "email": "ndohyannick78@gmail.com",
+        "telephone": "653539102",
+        "date_reservation": "2025-11-28",
+        "heure_reservation": "15:58:00",
+        "nb_personnes": 1,
+        "note_speciale": "rien",
+        "date_demande": "2025-11-20T09:58:22.443Z",
+        "statut": "PENDING"
+    }
+},
+{
+    "model": "reservation.reservation",
+    "pk": 2,
+    "fields": {
+        "client": null,
+        "nom_client": "Yannick Ndoh",
+        "email": "ndohyannick78@gmail.com",
+        "telephone": "653539102",
+        "date_reservation": "2025-11-23",
+        "heure_reservation": "15:34:00",
+        "nb_personnes": 4,
+        "note_speciale": "annisaire",
+        "date_demande": "2025-11-20T11:34:58.174Z",
+        "statut": "PENDING"
+    }
+},
+{
+    "model": "reservation.reservation",
+    "pk": 3,
+    "fields": {
+        "client": [
+            "pharaon"
+        ],
+        "nom_client": "pharaon",
+        "email": "ndohyannick78@gmail.com",
+        "telephone": "653539102",
+        "date_reservation": "2025-11-05",
+        "heure_reservation": "15:36:00",
+        "nb_personnes": 3,
+        "note_speciale": "test",
+        "date_demande": "2025-11-22T14:35:59.858Z",
+        "statut": "CONFIRMED"
+    }
+},
+{
+    "model": "reservation.reservation",
+    "pk": 4,
+    "fields": {
+        "client": [
+            "pharaon"
+        ],
+        "nom_client": "pharaon",
+        "email": "ndohyannick78@gmail.com",
+        "telephone": "653539102",
+        "date_reservation": "2025-11-23",
+        "heure_reservation": "17:01:00",
+        "nb_personnes": 2,
+        "note_speciale": "crabe",
+        "date_demande": "2025-11-22T16:02:17.849Z",
+        "statut": "CONFIRMED"
+    }
+},
+{
+    "model": "reservation.reservation",
+    "pk": 5,
+    "fields": {
+        "client": [
+            "king"
+        ],
+        "nom_client": "king",
+        "email": "kingtang337@gmail.com",
+        "telephone": "653539102",
+        "date_reservation": "2025-11-28",
+        "heure_reservation": "19:34:00",
+        "nb_personnes": 1,
+        "note_speciale": "tout epice",
+        "date_demande": "2025-11-30T18:33:03.368Z",
+        "statut": "PENDING"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1,
+    "fields": {
+        "action_time": "2025-11-15T19:58:07.405Z",
+        "user": [
+            "kingtang"
+        ],
+        "content_type": [
+            "restaurant",
+            "meals"
+        ],
+        "object_id": "3",
+        "object_repr": "Meals object (3)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 2,
+    "fields": {
+        "action_time": "2025-11-15T19:58:07.565Z",
+        "user": [
+            "kingtang"
+        ],
+        "content_type": [
+            "restaurant",
+            "meals"
+        ],
+        "object_id": "4",
+        "object_repr": "Meals object (4)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3,
+    "fields": {
+        "action_time": "2025-11-17T11:52:10.268Z",
+        "user": [
+            "king"
+        ],
+        "content_type": [
+            "menu",
+            "plat"
+        ],
+        "object_id": "11",
+        "object_repr": "[Entrées] Beignets de Haricots (Puff-Puff & Haricot) (1500.00 FCFA)",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Is special\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 4,
+    "fields": {
+        "action_time": "2025-11-19T19:00:03.772Z",
+        "user": [
+            "king"
+        ],
+        "content_type": [
+            "menu",
+            "plat"
+        ],
+        "object_id": "11",
+        "object_repr": "[Entrées] Beignets de Haricots (Puff-Puff & Haricot) (1500 FCFA)",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 5,
+    "fields": {
+        "action_time": "2025-11-19T19:22:01.268Z",
+        "user": [
+            "king"
+        ],
+        "content_type": [
+            "menu",
+            "plat"
+        ],
+        "object_id": "20",
+        "object_repr": "[Boissons] Bière locale (33 Export / Beaufort) (1000 FCFA)",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 6,
+    "fields": {
+        "action_time": "2025-11-19T19:22:16.456Z",
+        "user": [
+            "king"
+        ],
+        "content_type": [
+            "menu",
+            "plat"
+        ],
+        "object_id": "17",
+        "object_repr": "[Poissons & Grillades] Brochettes de Bœuf (Soya) (4000 FCFA)",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 7,
+    "fields": {
+        "action_time": "2025-11-19T19:22:34.583Z",
+        "user": [
+            "king"
+        ],
+        "content_type": [
+            "menu",
+            "plat"
+        ],
+        "object_id": "18",
+        "object_repr": "[Poissons & Grillades] Escalope de Poulet Grillée (5500 FCFA)",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 8,
+    "fields": {
+        "action_time": "2025-11-22T01:02:27.668Z",
+        "user": [
+            "king"
+        ],
+        "content_type": [
+            "pages",
+            "temoignage"
+        ],
+        "object_id": "3",
+        "object_repr": "Témoignage de Jean-Pierre T.",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Visible\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 9,
+    "fields": {
+        "action_time": "2025-11-22T01:44:05.393Z",
+        "user": [
+            "king"
+        ],
+        "content_type": [
+            "menu",
+            "plat"
+        ],
+        "object_id": "20",
+        "object_repr": "[Boissons] Bière locale (33 Export / Beaufort) (1000 FCFA)]",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Stock\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 10,
+    "fields": {
+        "action_time": "2025-11-22T01:44:05.522Z",
+        "user": [
+            "king"
+        ],
+        "content_type": [
+            "menu",
+            "plat"
+        ],
+        "object_id": "20",
+        "object_repr": "[Boissons] Bière locale (33 Export / Beaufort) (1000 FCFA)]",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 11,
+    "fields": {
+        "action_time": "2025-11-22T01:44:16.337Z",
+        "user": [
+            "king"
+        ],
+        "content_type": [
+            "menu",
+            "plat"
+        ],
+        "object_id": "11",
+        "object_repr": "[Entrées] Beignets de Haricots (Puff-Puff & Haricot) (1500 FCFA)]",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Stock\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 12,
+    "fields": {
+        "action_time": "2025-11-22T01:44:36.048Z",
+        "user": [
+            "king"
+        ],
+        "content_type": [
+            "menu",
+            "plat"
+        ],
+        "object_id": "17",
+        "object_repr": "[Poissons & Grillades] Brochettes de Bœuf (Soya) (4000 FCFA)]",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Stock\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 13,
+    "fields": {
+        "action_time": "2025-11-22T01:45:47.843Z",
+        "user": [
+            "king"
+        ],
+        "content_type": [
+            "menu",
+            "plat"
+        ],
+        "object_id": "19",
+        "object_repr": "[Boissons] Jus de Gingembre (Gnamakou) (1500 FCFA)]",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Stock\", \"Image\", \"Is special\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 14,
+    "fields": {
+        "action_time": "2025-11-22T16:00:04.008Z",
+        "user": [
+            "king"
+        ],
+        "content_type": [
+            "reservation",
+            "reservation"
+        ],
+        "object_id": "3",
+        "object_repr": "Réservation de pharaon pour 3 le 2025-11-05",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Statut\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 15,
+    "fields": {
+        "action_time": "2025-11-22T16:03:13.005Z",
+        "user": [
+            "king"
+        ],
+        "content_type": [
+            "reservation",
+            "reservation"
+        ],
+        "object_id": "4",
+        "object_repr": "Réservation de pharaon pour 2 le 2025-11-23",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Statut\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 16,
+    "fields": {
+        "action_time": "2025-11-22T18:32:17.490Z",
+        "user": [
+            "king"
+        ],
+        "content_type": [
+            "menu",
+            "plat"
+        ],
+        "object_id": "11",
+        "object_repr": "[Entrées] Beignets de Haricots (Puff-Puff & Haricot) (1500 FCFA)]",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Stock\", \"Image\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 17,
+    "fields": {
+        "action_time": "2025-11-22T18:32:58.598Z",
+        "user": [
+            "king"
+        ],
+        "content_type": [
+            "menu",
+            "plat"
+        ],
+        "object_id": "20",
+        "object_repr": "[Boissons] Bière locale (33 Export / Beaufort) (1000 FCFA)]",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Stock\", \"Image\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 18,
+    "fields": {
+        "action_time": "2025-11-22T18:34:02.091Z",
+        "user": [
+            "king"
+        ],
+        "content_type": [
+            "menu",
+            "plat"
+        ],
+        "object_id": "17",
+        "object_repr": "[Poissons & Grillades] Brochettes de Bœuf (Soya) (4000 FCFA)]",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Stock\", \"Image\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 19,
+    "fields": {
+        "action_time": "2025-11-22T18:34:37.933Z",
+        "user": [
+            "king"
+        ],
+        "content_type": [
+            "menu",
+            "plat"
+        ],
+        "object_id": "14",
+        "object_repr": "[Plats Locaux] Koki (3500 FCFA)]",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Stock\", \"Image\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 20,
+    "fields": {
+        "action_time": "2025-11-22T18:35:26.516Z",
+        "user": [
+            "king"
+        ],
+        "content_type": [
+            "menu",
+            "plat"
+        ],
+        "object_id": "13",
+        "object_repr": "[Plats Locaux] Ndolé au Bœuf Fumé (6000 FCFA)]",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Stock\", \"Image\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 21,
+    "fields": {
+        "action_time": "2025-11-22T18:37:26.134Z",
+        "user": [
+            "king"
+        ],
+        "content_type": [
+            "menu",
+            "plat"
+        ],
+        "object_id": "16",
+        "object_repr": "[Poissons & Grillades] Poisson Braisé (Tilapia) (7000 FCFA)]",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Stock\", \"Image\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 22,
+    "fields": {
+        "action_time": "2025-11-22T18:38:14.508Z",
+        "user": [
+            "king"
+        ],
+        "content_type": [
+            "menu",
+            "plat"
+        ],
+        "object_id": "15",
+        "object_repr": "[Plats Locaux] Poulet DG (8500 FCFA)]",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Stock\", \"Image\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 23,
+    "fields": {
+        "action_time": "2025-11-22T18:38:47.899Z",
+        "user": [
+            "king"
+        ],
+        "content_type": [
+            "menu",
+            "plat"
+        ],
+        "object_id": "12",
+        "object_repr": "[Entrées] Salade de Crabe et Avocat (4500 FCFA)]",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Stock\", \"Image\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 24,
+    "fields": {
+        "action_time": "2025-11-22T18:41:36.194Z",
+        "user": [
+            "king"
+        ],
+        "content_type": [
+            "menu",
+            "plat"
+        ],
+        "object_id": "21",
+        "object_repr": "[Desserts] gourmet pasion (1700 FCFA)]",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 25,
+    "fields": {
+        "action_time": "2025-11-22T18:44:59.593Z",
+        "user": [
+            "king"
+        ],
+        "content_type": [
+            "menu",
+            "plat"
+        ],
+        "object_id": "22",
+        "object_repr": "[Plats Principaux] katikati (2000 FCFA)]",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 26,
+    "fields": {
+        "action_time": "2025-11-22T18:46:32.310Z",
+        "user": [
+            "king"
+        ],
+        "content_type": [
+            "menu",
+            "plat"
+        ],
+        "object_id": "23",
+        "object_repr": "[Plats Principaux] riz curri (1500 FCFA)]",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 27,
+    "fields": {
+        "action_time": "2025-11-22T18:48:10.390Z",
+        "user": [
+            "king"
+        ],
+        "content_type": [
+            "menu",
+            "plat"
+        ],
+        "object_id": "24",
+        "object_repr": "[Desserts] Beignets souflee a la creme (1800 FCFA)]",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 28,
+    "fields": {
+        "action_time": "2025-11-22T18:48:10.474Z",
+        "user": [
+            "king"
+        ],
+        "content_type": [
+            "menu",
+            "plat"
+        ],
+        "object_id": "25",
+        "object_repr": "[Desserts] Beignets souflee a la creme (1800 FCFA)]",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+}
+]
