@@ -33,6 +33,7 @@ ALLOWED_HOSTS = []
 INSTALLED_APPS = [
     # 'jet.dashboard',
     # 'jet',
+    'whitenoise.runserver_nostatic',
     'simpleui',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -81,7 +82,6 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'restaurant.wsgi.application'
 
-
 IS_VERCEL = "VERCEL" in os.environ
 
 if IS_VERCEL:
@@ -105,7 +105,6 @@ else:
             'PORT': '5432',
         }
     }
-
 
 ALLOWED_HOSTS = ['127.0.0.1', '.vercel.app', config('VERCEL_URL', default='')]
 # Password validation
@@ -142,7 +141,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles_build','static')
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles_build', 'static')
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = Path.joinpath(BASE_DIR, 'media')
@@ -155,4 +154,3 @@ CRISPY_TEMPLATE_PACK = "tailwind"
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-
