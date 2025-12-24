@@ -33,8 +33,9 @@ ALLOWED_HOSTS = []
 INSTALLED_APPS = [
     # 'jet.dashboard',
     # 'jet',
+    # 'simpleui',
     'whitenoise.runserver_nostatic',
-    'simpleui',
+
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
