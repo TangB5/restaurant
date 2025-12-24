@@ -1,0 +1,80 @@
+{% extends "admin/base.html" %}
+{% load static %}
+
+{% block title %}{{ title }} | Dashboard Restaurant{% endblock %}
+
+{% block extrastyle %}
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+
+<style>
+    :root {
+        --primary: #f97316;
+        --dark: #0f172a;
+        --bg-soft: #f8fafc;
+    }
+
+    /* 1. SUPPRESSION DE LA SIDEBAR DJANGO */
+    #nav-sidebar, .toggle-nav-sidebar {
+        display: none !important;
+    }
+
+    /* 2. FORCE LA PLEINE LARGEUR */
+    #main {
+        display: block !important;
+    }
+
+    .main-content {
+        margin-left: 0 !important;
+        width: 100% !important;
+    }
+
+    body {
+        font-family: 'Plus Jakarta Sans', sans-serif !important;
+        background: var(--bg-soft) !important;
+    }
+
+    /* 3. HEADER STYLE EGGIFY */
+    #header {
+        background: white !important;
+        padding: 20px 40px !important;
+        border-bottom: 1px solid #e2e8f0 !important;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #branding h1 a {
+        color: var(--dark) !important;
+        font-weight: 800;
+        font-size: 1.5rem;
+    }
+
+    /* 4. TABLEAUX SOFT (Pour toutes les pages CRUD) */
+    .results {
+        border-radius: 20px !important;
+        overflow: hidden;
+        border: none !important;
+        box-shadow: 0 4px 20px rgba(0,0,0,0.05) !important;
+        background: white !important;
+    }
+
+    table thead th {
+        background: #f1f5f9 !important;
+        color: #64748b !important;
+        text-transform: uppercase;
+        font-size: 11px;
+        padding: 15px !important;
+    }
+
+    tbody td { padding: 15px !important; border-bottom: 1px solid #f1f5f9 !important; }
+</style>
+{% endblock %}
+
+{% block branding %}
+<h1 id="site-name">
+    <a href="{% url 'admin:index' %}">
+        <span style="color: white">RESTAURANT</span>
+    </a>
+</h1>
+{% endblock %}
