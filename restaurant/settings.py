@@ -81,7 +81,31 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'restaurant.wsgi.application'
-
+# On récupère la variable d'environnement si elle existe
+# DATABASE_URL = os.environ.get('DATABASE_URL')
+#
+# if DATABASE_URL:
+#     # Si DATABASE_URL est détectée (Vercel ou export manuel), on l'utilise
+#     DATABASES = {
+#         'default': dj_database_url.config(
+#             default=DATABASE_URL,
+#             conn_max_age=600,
+#             conn_health_checks=True,
+#             ssl_require=True
+#         )
+#     }
+# else:
+#     # Sinon, on reste sur la base locale
+#     DATABASES = {
+#         'default': {
+#             'ENGINE': 'django.db.backends.postgresql',
+#             'NAME': 'restaurant_db',
+#             'USER': 'django_user',
+#             'PASSWORD': 'mondjangopassword',
+#             'HOST': '127.0.0.1',
+#             'PORT': '5432',
+#         }
+#     }
 IS_VERCEL = "VERCEL" in os.environ
 
 if IS_VERCEL:
