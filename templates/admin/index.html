@@ -1,0 +1,693 @@
+{% extends "admin/base_site.html" %}
+{% load i18n static %}
+
+{% block extrastyle %}
+{{ block.super }}
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+<style>
+    /* === COLOR SYSTEM === */
+    :root {
+        --primary: #f97316;
+        --primary-dark: #ea580c;
+        --primary-light: #fb923c;
+        --secondary: #06b6d4;
+        --success: #10b981;
+        --warning: #f59e0b;
+        --danger: #ef4444;
+        --dark: #1e293b;
+        --dark-hover: #334155;
+        --bg-gray: #f8fafc;
+        --bg-card: #ffffff;
+        --border: #e2e8f0;
+        --text-primary: #0f172a;
+        --text-secondary: #64748b;
+        --text-muted: #94a3b8;
+        --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+        --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+        --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1);
+    }
+
+    /* === GLOBAL LAYOUT === */
+    body { background: var(--bg-gray); font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; }
+
+    #header {
+        background: linear-gradient(135deg, var(--dark) 0%, #0f172a 100%) !important;
+        border-bottom: none !important;
+        padding: 16px 40px;
+        box-shadow: var(--shadow-md);
+    }
+
+    #branding h1 {
+        color: white;
+        font-size: 1.5rem;
+        font-weight: 800;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+    }
+
+    #branding h1::before {
+        content: '🍽️';
+        font-size: 2rem;
+    }
+
+    #user-tools {
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 8px;
+        padding: 8px 16px;
+    }
+
+    #content {
+        background: var(--bg-gray);
+        padding: 30px 40px;
+        min-height: calc(100vh - 120px);
+    }
+
+    #content-main {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        max-width: 1600px;
+        margin: 0 auto;
+    }
+
+    /* === WELCOME SECTION === */
+    .welcome-banner {
+        background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+        border-radius: 16px;
+        padding: 30px 40px;
+        color: white;
+        box-shadow: var(--shadow-lg);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
+    .welcome-content h1 {
+        margin: 0 0 8px 0;
+        font-size: 2rem;
+        font-weight: 800;
+    }
+
+    .welcome-content p {
+        margin: 0;
+        opacity: 0.9;
+        font-size: 1rem;
+    }
+
+    .welcome-time {
+        background: rgba(255, 255, 255, 0.15);
+        backdrop-filter: blur(10px);
+        padding: 20px 30px;
+        border-radius: 12px;
+        text-align: center;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .welcome-time .time {
+        font-size: 2.5rem;
+        font-weight: 800;
+        margin-bottom: 5px;
+    }
+
+    .welcome-time .date {
+        font-size: 0.9rem;
+        opacity: 0.9;
+    }
+
+    /* === STATISTICS GRID === */
+    .stats-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 24px;
+        margin-bottom: 10px;
+    }
+
+    .stat-card {
+        background: var(--bg-card);
+        border-radius: 16px;
+        border: 1px solid var(--border);
+        padding: 28px;
+        display: flex;
+        align-items: center;
+        gap: 24px;
+        transition: all 0.3s ease;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .stat-card::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 4px;
+        height: 100%;
+        background: var(--primary);
+        transform: scaleY(0);
+        transition: transform 0.3s ease;
+    }
+
+    .stat-card:hover {
+        transform: translateY(-4px);
+        box-shadow: var(--shadow-lg);
+        border-color: var(--primary);
+    }
+
+    .stat-card:hover::before {
+        transform: scaleY(1);
+    }
+
+    .stat-icon {
+        width: 70px;
+        height: 70px;
+        background: linear-gradient(135deg, #fff7ed 0%, #ffedd5 100%);
+        color: var(--primary);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 16px;
+        font-size: 2rem;
+        flex-shrink: 0;
+        box-shadow: var(--shadow-sm);
+    }
+
+    .stat-icon.success { background: linear-gradient(135deg, #d1fae5 0%, #a7f3d0 100%); color: var(--success); }
+    .stat-icon.warning { background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%); color: var(--warning); }
+    .stat-icon.info { background: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%); color: var(--secondary); }
+
+    .stat-info {
+        flex: 1;
+        min-width: 0;
+    }
+
+    .stat-info h3 {
+        margin: 0 0 8px 0;
+        font-size: 0.75rem;
+        color: var(--text-secondary);
+        text-transform: uppercase;
+        letter-spacing: 1.2px;
+        font-weight: 700;
+    }
+
+    .stat-info .stat-value {
+        display: flex;
+        align-items: baseline;
+        gap: 8px;
+    }
+
+    .stat-info .stat-value p {
+        margin: 0;
+        font-size: 2rem;
+        font-weight: 800;
+        color: var(--text-primary);
+        line-height: 1;
+    }
+
+    .stat-badge {
+        background: #dcfce7;
+        color: #166534;
+        padding: 4px 10px;
+        border-radius: 12px;
+        font-size: 0.75rem;
+        font-weight: 700;
+        display: inline-flex;
+        align-items: center;
+        gap: 4px;
+    }
+
+    .stat-badge.down {
+        background: #fee2e2;
+        color: #991b1b;
+    }
+
+    /* === MAIN CONTENT GRID === */
+    .dashboard-grid {
+        display: grid;
+        grid-template-columns: 1.5fr 1fr;
+        gap: 30px;
+    }
+
+    @media (max-width: 1200px) {
+        .dashboard-grid {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    /* === MODULE CARDS === */
+    .module {
+        background: var(--bg-card) !important;
+        border: 1px solid var(--border) !important;
+        border-radius: 16px !important;
+        overflow: hidden;
+        box-shadow: var(--shadow-sm) !important;
+        margin: 0 0 24px 0 !important;
+        transition: all 0.3s ease;
+    }
+
+    .module:hover {
+        box-shadow: var(--shadow-md) !important;
+        border-color: var(--primary) !important;
+    }
+
+    .module h2,
+    .module caption {
+        background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%) !important;
+        color: white !important;
+        padding: 18px 24px !important;
+        margin: 0 !important;
+        font-size: 1rem !important;
+        font-weight: 700 !important;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        border: none !important;
+    }
+
+    .module caption a {
+        color: white !important;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .module caption i {
+        font-size: 1.2rem;
+    }
+
+    .module table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    .module th,
+    .module td {
+        padding: 16px 24px !important;
+        border-bottom: 1px solid var(--border) !important;
+        text-align: left;
+    }
+
+    .module th {
+        font-weight: 600 !important;
+        color: var(--text-primary) !important;
+        font-size: 0.95rem;
+    }
+
+    .module td {
+        color: var(--text-secondary) !important;
+    }
+
+    .module tr:last-child td {
+        border-bottom: none !important;
+    }
+
+    .module tr:hover {
+        background: var(--bg-gray);
+    }
+
+    /* === ACTION LINKS === */
+    .addlink,
+    .changelink {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        padding: 8px 16px;
+        border-radius: 8px;
+        font-weight: 600;
+        font-size: 0.85rem;
+        text-decoration: none;
+        transition: all 0.2s ease;
+        margin-left: 8px;
+    }
+
+    .addlink {
+        background: linear-gradient(135deg, var(--success) 0%, #059669 100%);
+        color: white !important;
+    }
+
+    .addlink:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(16, 185, 129, 0.3);
+    }
+
+    .changelink {
+        background: linear-gradient(135deg, var(--secondary) 0%, #0891b2 100%);
+        color: white !important;
+    }
+
+    .changelink:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(6, 182, 212, 0.3);
+    }
+
+    .text-right {
+        text-align: right !important;
+        white-space: nowrap;
+    }
+
+    /* === RECENT ACTIONS === */
+    #recent-actions-module {
+        height: fit-content;
+        position: sticky;
+        top: 20px;
+    }
+
+    .actionlist {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .actionlist li {
+        padding: 16px;
+        margin-bottom: 12px;
+        background: var(--bg-gray);
+        border-radius: 10px;
+        border-left: 4px solid var(--primary);
+        font-size: 0.9rem;
+        transition: all 0.2s ease;
+    }
+
+    .actionlist li:hover {
+        background: #f1f5f9;
+        transform: translateX(4px);
+    }
+
+    .actionlist li:last-child {
+        margin-bottom: 0;
+    }
+
+    .actionlist .time {
+        color: var(--text-muted);
+        font-size: 0.8rem;
+        font-weight: 600;
+    }
+
+    .actionlist strong {
+        color: var(--text-primary);
+        font-weight: 700;
+    }
+
+    .actionlist small {
+        color: var(--text-secondary);
+        font-size: 0.8rem;
+        display: block;
+        margin-top: 4px;
+    }
+
+    /* === QUICK ACTIONS PANEL === */
+    .quick-actions {
+        background: var(--bg-card);
+        border: 1px solid var(--border);
+        border-radius: 16px;
+        padding: 24px;
+        margin-bottom: 24px;
+    }
+
+    .quick-actions h3 {
+        margin: 0 0 20px 0;
+        font-size: 1.1rem;
+        font-weight: 700;
+        color: var(--text-primary);
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .quick-actions-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 12px;
+    }
+
+    .quick-action-btn {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        padding: 20px;
+        background: var(--bg-gray);
+        border: 2px solid var(--border);
+        border-radius: 12px;
+        text-decoration: none;
+        color: var(--text-primary);
+        font-weight: 600;
+        font-size: 0.9rem;
+        transition: all 0.2s ease;
+        text-align: center;
+    }
+
+    .quick-action-btn:hover {
+        background: white;
+        border-color: var(--primary);
+        transform: translateY(-2px);
+        box-shadow: var(--shadow-md);
+    }
+
+    .quick-action-btn i {
+        font-size: 1.8rem;
+        color: var(--primary);
+    }
+
+    /* === RESPONSIVE === */
+    @media (max-width: 768px) {
+        #content { padding: 20px; }
+        .stats-grid { grid-template-columns: 1fr; }
+        .welcome-banner { flex-direction: column; text-align: center; gap: 20px; }
+        .dashboard-grid { grid-template-columns: 1fr; }
+        .quick-actions-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+
+    /* === ANIMATIONS === */
+    @keyframes fadeInUp {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .stat-card, .module, .quick-actions {
+        animation: fadeInUp 0.5s ease forwards;
+    }
+
+    .stat-card:nth-child(1) { animation-delay: 0.1s; }
+    .stat-card:nth-child(2) { animation-delay: 0.2s; }
+    .stat-card:nth-child(3) { animation-delay: 0.3s; }
+    .stat-card:nth-child(4) { animation-delay: 0.4s; }
+</style>
+{% endblock %}
+
+{% block content %}
+<div id="content-main">
+
+    <!-- Welcome Banner -->
+    <div class="welcome-banner">
+        <div class="welcome-content">
+            <h1>👋 Bonjour, {% firstof user.get_full_name user.username %}!</h1>
+            <p>Bienvenue dans votre espace d'administration. Voici un aperçu de votre activité.</p>
+        </div>
+        <div class="welcome-time">
+            <div class="time" id="current-time">--:--</div>
+            <div class="date" id="current-date">-- --- ----</div>
+        </div>
+    </div>
+
+    <!-- Statistics Grid -->
+    <div class="stats-grid">
+        <div class="stat-card">
+            <div class="stat-icon">
+                <i class="fas fa-shopping-bag"></i>
+            </div>
+            <div class="stat-info">
+                <h3>Commandes Aujourd'hui</h3>
+                <div class="stat-value">
+                    <p>24</p>
+                    <span class="stat-badge">
+                        <i class="fas fa-arrow-up"></i> +12%
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <div class="stat-card">
+            <div class="stat-icon success">
+                <i class="fas fa-wallet"></i>
+            </div>
+            <div class="stat-info">
+                <h3>Chiffre d'affaires</h3>
+                <div class="stat-value">
+                    <p>155 000</p>
+                    <small style="color: var(--text-muted); font-weight: 600;">XAF</small>
+                </div>
+            </div>
+        </div>
+
+        <div class="stat-card">
+            <div class="stat-icon warning">
+                <i class="fas fa-utensils"></i>
+            </div>
+            <div class="stat-info">
+                <h3>Plats en cuisine</h3>
+                <div class="stat-value">
+                    <p>8</p>
+                    <span class="stat-badge down">
+                        <i class="fas fa-clock"></i> En cours
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <div class="stat-card">
+            <div class="stat-icon info">
+                <i class="fas fa-users"></i>
+            </div>
+            <div class="stat-info">
+                <h3>Clients actifs</h3>
+                <div class="stat-value">
+                    <p>127</p>
+                    <span class="stat-badge">
+                        <i class="fas fa-arrow-up"></i> +5
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Quick Actions -->
+    <div class="quick-actions">
+        <h3><i class="fas fa-bolt"></i> Actions Rapides</h3>
+        <div class="quick-actions-grid">
+            <a href="/admin/menu/commande/add/" class="quick-action-btn">
+                <i class="fas fa-plus-circle"></i>
+                Nouvelle Commande
+            </a>
+            <a href="/admin/menu/plat/add/" class="quick-action-btn">
+                <i class="fas fa-pizza-slice"></i>
+                Ajouter un Plat
+            </a>
+            <a href="/admin/menu/commande/?status__exact=pending" class="quick-action-btn">
+                <i class="fas fa-clock"></i>
+                Commandes en Attente
+            </a>
+            <a href="/admin/menu/plat/?stock__exact=0" class="quick-action-btn">
+                <i class="fas fa-exclamation-triangle"></i>
+                Stock Épuisé
+            </a>
+        </div>
+    </div>
+
+    <!-- Main Dashboard Grid -->
+    <div class="dashboard-grid">
+        <!-- App List (Left Column) -->
+        <div class="app-list">
+            {% if app_list %}
+                {% for app in app_list %}
+                    <div class="module">
+                        <table>
+                            <caption>
+                                <a href="{{ app.app_url }}" title="{% translate 'Models in the' %} {{ app.name }} {% translate 'application' %}">
+                                    <i class="fas fa-folder-open"></i>
+                                    {{ app.name }}
+                                </a>
+                            </caption>
+                            {% for model in app.models %}
+                                <tr>
+                                    <th scope="row">
+                                        {% if model.admin_url %}
+                                            <a href="{{ model.admin_url }}" style="color: var(--text-primary); text-decoration: none; font-weight: 600;">
+                                                {{ model.name }}
+                                            </a>
+                                        {% else %}
+                                            {{ model.name }}
+                                        {% endif %}
+                                    </th>
+                                    <td class="text-right">
+                                        {% if model.add_url %}
+                                            <a href="{{ model.add_url }}" class="addlink">
+                                                <i class="fas fa-plus"></i> Ajouter
+                                            </a>
+                                        {% endif %}
+                                        {% if model.admin_url %}
+                                            <a href="{{ model.admin_url }}" class="changelink">
+                                                <i class="fas fa-list"></i> Gérer
+                                            </a>
+                                        {% endif %}
+                                    </td>
+                                </tr>
+                            {% endfor %}
+                        </table>
+                    </div>
+                {% endfor %}
+            {% else %}
+                <div class="module">
+                    <div style="padding: 40px; text-align: center; color: var(--text-muted);">
+                        <i class="fas fa-info-circle" style="font-size: 3rem; margin-bottom: 16px; opacity: 0.5;"></i>
+                        <p>{% translate "You don't have permission to view or edit anything." %}</p>
+                    </div>
+                </div>
+            {% endif %}
+        </div>
+
+        <!-- Recent Actions (Right Column) -->
+        <div id="content-related">
+            <div class="module" id="recent-actions-module">
+                <h2>
+                    <i class="fas fa-history"></i>
+                    {% translate 'Recent actions' %}
+                </h2>
+                <div style="padding: 20px;">
+                    {% load log %}
+                    {% get_admin_log 10 as admin_log for_user user %}
+                    {% if not admin_log %}
+                        <p style="color: var(--text-muted); text-align: center; padding: 20px;">
+                            <i class="fas fa-inbox"></i><br>
+                            {% translate 'None available' %}
+                        </p>
+                    {% else %}
+                        <ul class="actionlist">
+                            {% for entry in admin_log %}
+                                <li>
+                                    <span class="time">
+                                        <i class="far fa-clock"></i>
+                                        {{ entry.action_time|date:"H:i" }}
+                                    </span>
+                                    <br>
+                                    <strong>{{ entry.object_repr|truncatewords:5 }}</strong>
+                                    <small>{{ entry.get_change_message }}</small>
+                                </li>
+                            {% endfor %}
+                        </ul>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<script>
+    // Live Clock
+    function updateTime() {
+        const now = new Date();
+        const timeString = now.toLocaleTimeString('fr-FR', { hour: '2-digit', minute: '2-digit' });
+        const dateString = now.toLocaleDateString('fr-FR', {
+            weekday: 'long',
+            year: 'numeric',
+            month: 'long',
+            day: 'numeric'
+        });
+
+        document.getElementById('current-time').textContent = timeString;
+        document.getElementById('current-date').textContent = dateString;
+    }
+
+    updateTime();
+    setInterval(updateTime, 1000);
+</script>
+{% endblock %}
