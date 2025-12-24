@@ -1,11 +1,13 @@
-# menu/views.py
 from django.http import HttpResponse, JsonResponse
 from django.shortcuts import render, redirect, get_object_or_404
 from django.contrib.auth.decorators import login_required
 from django.core.paginator import Paginator
 from django.db.models import Count, Q, Sum
 from django.contrib import messages
-from .models import Plat, CategorieMenu, Commande
+
+from .models import Plat, CategorieMenu
+from commandes.models import Commande
+
 
 
 def menu(request):

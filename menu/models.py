@@ -39,10 +39,3 @@ class Plat(models.Model):
     def __str__(self):
         return f"[{self.categorie.nom}] {self.nom} ({self.prix} FCFA)]"
 
-class Commande(models.Model):
-    plats = models.ForeignKey(Plat, on_delete=models.CASCADE, related_name='plats')
-    client=models.ForeignKey(User, on_delete=models.CASCADE, related_name='plats')
-    montant=models.PositiveIntegerField('montant de la commande',default=0)
-    nbPlat=models.PositiveIntegerField('nombre de plats commandee',default=0)
-    status=models.CharField('status de la commandes',choices=DELEVRY_STATUS_CHOICES, default='pending', max_length=10)
-    created_at = models.DateTimeField('commander le :',default=now)
