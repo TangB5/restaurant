@@ -35,7 +35,7 @@ INSTALLED_APPS = [
     # 'jet',
     # 'simpleui',
     'whitenoise.runserver_nostatic',
-
+    'jazzmin',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -150,6 +150,89 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+JAZZMIN_SETTINGS = {
+    "site_title": "Restaurant Admin",
+    "site_header": "Restaurant",
+    "site_brand": "Restaurant",
+# Chemin vers le logo sur la page de connexion (utilisez votre logo 'R')
+    "login_logo": "image/favicon/apple-touch-icon.png",
+
+    # Chemin vers le logo dans la barre de navigation (petit logo en haut à gauche)
+    "site_logo": "image/favicon/favicon-32x32.png",
+
+    # LE FAVICON : C'est ici que ça se passe
+    "site_icon": "image/favicon/favicon.ico",
+
+    # Optionnel : si vous voulez que le logo de la barre de navigation
+    # ne soit pas déformé s'il n'est pas carré
+    "site_logo_classes": "img-circle",
+
+    "welcome_sign": "Bienvenue dans l'interface de gestion de votre Restaurant",
+    "copyright": "Restaurant Ltd",
+
+    "icons": {
+        "auth": "fas fa-users-cog",
+        "auth.user": "fas fa-user",
+        "auth.Group": "fas fa-users",
+
+
+        "commandes.Commande": "fas fa-shopping-bag",  # Plus moderne pour le commerce
+        "menu.Plat": "fas fa-utensils",  # Carte & Menu
+        "reservations.Reservation": "fas fa-calendar-check",  # Réservation
+        "avis.Avis": "fas fa-star",  # Avis
+        # Pour CategorieMenu (Organisation/Listes)
+        "menu.CategorieMenu": "fas fa-th-list",
+
+        # Pour HorairesOuverture (Temps/Horloge)
+        "pages.HorairesOuverture": "fas fa-clock",
+
+        # Pour Temoignage (Citations/Commentaires)
+        "pages.Temoignage": "fas fa-quote-left",
+
+        # Pour Reservation (Calendrier/RDV)
+        "reservation.Reservation": "fas fa-calendar-alt",
+
+    },
+
+    "default_icon_parents": "fas fa-chevron-circle-right",
+    "default_icon_children": "fas fa-circle",
+}
+
+JAZZMIN_UI_TWEAKS = {
+    "navbar_small_text": False,
+    "footer_small_text": False,
+    "body_small_text": False,
+    "brand_small_text": False,
+    "brand_colour": "navbar-orange",
+    "accent": "accent-orange",
+    "navbar": "navbar-white navbar-light",
+    "no_navbar_border": False,
+    "navbar_fixed": True,
+
+    "layout_boxed": False,
+    "footer_fixed": False,
+    "sidebar_fixed": True,
+    "sidebar": "sidebar-dark-orange",
+
+    "sidebar_nav_small_text": False,
+    "sidebar_disable_expand": False,
+    "sidebar_nav_child_indent": True,  # Plus lisible pour les sous-menus
+    "sidebar_nav_compact_style": False,
+    "sidebar_nav_legacy_style": False,
+    "sidebar_nav_flat_style": False,
+
+    "theme": "litera",
+    "dark_mode_theme": None,
+
+    "button_classes": {
+        "primary": "btn-orange",  # Personnalisé via CSS si besoin
+        "secondary": "btn-secondary",
+        "info": "btn-info",
+        "warning": "btn-warning",
+        "danger": "btn-danger",
+        "success": "btn-success"
+    }
+}
 # Internationalization
 # https://docs.djangoproject.com/en/5.2/topics/i18n/
 
